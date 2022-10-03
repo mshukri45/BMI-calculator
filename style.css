@@ -1,0 +1,100 @@
+
+/* import font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+
+
+*{ /* universal selector */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ /*background pic*/
+    min-height: 100vh;
+    background-image: url("bg.png");
+    background-size: cover;
+}
+
+.container{ /* div to contain all including box to center separated from box to easier to understand*/
+    position:absolute; /* take element out of normal flow and put anywhere in screen */
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%); /*translate (x,y) 50% of container size because of offset*/
+}
+
+.box{ /* div to contain all content */
+    min-width: 400px;   /*If the content is smaller than the minimum width, the minimum width will be applied.*/
+    background: rgb(250, 250, 250, 0.5);    /* with alpha for transparency */
+    border-radius: 38px;    /*rounding border*/
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+h1{ 
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0; /* only top and bottom padding */
+}
+.content{
+    padding: 0 40px; /* left and right padding for div*/
+}
+
+.promt{ /* div to contain user input*/
+    background: #FFF;
+    border-radius: 28px;    /*rounding border*/
+    padding: 20px 0;    /* only top and bottom padding */
+    margin-bottom: 20px; /*bottom margin */
+}
+
+.promt label{ /*to label input */
+    /*display: block;   Displays an element as a block element*/
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.promt input{ /*form style */
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #008CBA ;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Roboto';
+}
+
+#btn {/*button style*/
+    background-color: #008CBA; /* blue */
+    border: none;
+    border-radius: 28px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    width: 50% /* 50% from content div width*/
+  }
+
+  .result{ /*div for result*/
+    padding: 30px 20px;
+    font-weight: 600;
+  }
+
+  .result p{ /*fixed text*/
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  .result #result{ /*result of bmi*/
+    font-size: 36px;
+    font-weight: 900;
+    color: #008CBA;
+    margin-bottom: 25px;
+  }
+
+  #comment{ /*comment on bmi whter overweight or normal*/
+    color: DodgerBlue;
+    font-weight: 800;
+  }
